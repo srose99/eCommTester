@@ -13,6 +13,7 @@ public class OrderProcessorTest {
     
     @BeforeEach
     public void setUp() {
+        // Ensure that the orderProcessor object is instantiated before each test method
         orderProcessor = new OrderProcessor();
     }
     
@@ -44,4 +45,3 @@ public class OrderProcessorTest {
         assertEquals(8, (int) orderProcessor.getInventory().get("item4"));
     }
 }
-
